@@ -1,0 +1,5 @@
+<ul class="c-step-tracker">
+  <li *ngFor="let step of steps" class="c-step-tracker__item c-step-tracker__item--{{ step.status }}">
+    {{ step.title | uppercase }}
+  </li>
+</ul>

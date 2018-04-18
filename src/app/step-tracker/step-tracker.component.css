@@ -1,0 +1,16 @@
+.c-step-tracker {
+    list-style-type: none;
+    display: flex;
+}
+
+.c-step-tracker__item {
+    flex: 1;
+}
+
+.c-step-tracker__item--completed {
+    color: green;
+}
+
+.c-step-tracker__item--incomplete {
+    color: red;
+}

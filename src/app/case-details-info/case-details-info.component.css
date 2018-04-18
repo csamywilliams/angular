@@ -1,0 +1,10 @@
+.c-case-details-info {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.c-case-details-info__item {
+    flex: 1;
+}
