@@ -1,8 +1,11 @@
+<div class="flex-container">
 <h1>CALL CASES:</h1>
-<button>NEW CASE</button>
+<button class="new-button">NEW CASE</button>
+</div>
+
 <div class="c-case-details">
-  <h2>REF:</h2>
-  <h2>TYPE:</h2>
-  <p>{{ case.ref }}</p>
-  <p>{{ case.type | uppercase }}</p>
+  <span class="header">REF:</span>
+  <span class="spacer">{{ case.ref }}</span>
+  <span class="header">TYPE:</span>
+  <span>{{ case.type | uppercase }}</span>
 </div>

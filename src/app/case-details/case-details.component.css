@@ -1,4 +1,27 @@
 .c-case-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+}
+
+.new-button {
+    border-radius: 5px;
+    background-color: #F4007E;
+    color: #FFF;
+    border: #F4007E;
+    padding: 10px;
+}
+
+.c-case-details .header{
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+.spacer {
+    margin-right: 10%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

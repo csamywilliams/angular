@@ -6,13 +6,15 @@ export const NOTES: Note[] = [
         date: new Date(),
         author: "John Smith",
         subject: "Note 1",
-        message: "This is the content for the first message"
+        message: "This is the content for the first message",
+        tag: true
     },
     {
         id: 2,
         date: new Date(),
         author: "Jane Doe",
         subject: "Note 2",
-        message: "This is the content for the second message"
+        message: "This is the content for the second message",
+        tag: false
     }
 ];

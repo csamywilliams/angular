@@ -4,4 +4,5 @@ export class Note {
     author: string;
     subject: string;
     message: string;
+    tag: boolean;
 }

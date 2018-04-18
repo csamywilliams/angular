@@ -1,10 +1,12 @@
 .c-step-tracker {
     list-style-type: none;
     display: flex;
+    padding-left: 0;
 }
 
+
 .c-step-tracker__item {
-    flex: 1;
+    padding: 10px;
 }
 
 .c-step-tracker__item--completed {
