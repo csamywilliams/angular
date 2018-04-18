@@ -13,6 +13,7 @@ import { CaseDetailsInfoComponent } from './case-details-info/case-details-info.
 import { TabsComponent } from './tabs/tabs.component';
 import { NotesViewComponent } from './notes-view/notes-view.component';
 import { NoteComponent } from './note/note.component';
+import { EditableNoteComponent } from './editable-note/editable-note.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NoteComponent } from './note/note.component';
     CaseDetailsInfoComponent,
     TabsComponent,
     NotesViewComponent,
-    NoteComponent
+    NoteComponent,
+    EditableNoteComponent
   ],
   imports: [
     BrowserModule,    

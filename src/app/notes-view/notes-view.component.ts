@@ -16,13 +16,18 @@ export class NotesViewComponent implements OnInit {
 
   notes = NOTES;
 
+  showHide = false;
+
   ngOnInit() {
   }
 
-  addNote() {
+  addNote($scope) {
     //create a new note.
 
     //this.notes.push(n);
+
+    $scope.showme = true;
+  
   }
 
 }

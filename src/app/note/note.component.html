@@ -1,3 +1,9 @@
-{{ note.date }} {{ note.author }}{{ note.tag }}
-{{ note.subject }}
-{{ note.message }}
+<div class="note">
+
+    <div class="note-header flex-container">
+        <span class="date">{{ note.date | date : format : shortDate }}</span><span> {{ note.author }}</span>
+    </div>
+
+    <p>{{ note.subject }}</p>
+    <p>{{ note.message }}</p>
+</div>
