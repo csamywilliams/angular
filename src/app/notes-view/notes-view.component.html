@@ -1,10 +1,7 @@
-<div class="flex-container">
-    <button class="add-note" (click)="showHide = !showHide" >Add note</button>  
-</div>
-
-<div *ngIf="showHide">
+<details>
+  <summary>Add note</summary>
   <editable-note></editable-note>
-</div>
+</details>
 
 <div *ngFor="let note of notes">
   <note [note]="note"></note>

@@ -1,13 +1,5 @@
-.add-note {
-    margin-right: 2%;
-    border-radius: 5px;
-    background-color: #F4007E;
-    color: #FFF;
-    border: #F4007E;
+details {
+    background-color: lightgoldenrodyellow;
     padding: 10px;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: flex-end;
+    margin: 2%;
 }
