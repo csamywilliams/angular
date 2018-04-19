@@ -1,5 +1,8 @@
-details {
+summary {
     background-color: lightgoldenrodyellow;
     padding: 10px;
+}
+
+details {
     margin: 2%;
 }

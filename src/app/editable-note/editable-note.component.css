@@ -1,0 +1,15 @@
+.form-group {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    border-radius: 5px;
+    background-color: #F4007E;
+    color: #FFF;
+    border: #F4007E;
+    padding: 10px;
+}

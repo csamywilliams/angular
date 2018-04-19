@@ -14,8 +14,9 @@ export class EditableNoteComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() { 
-    this.submitted = true; 
+  submitNote() { 
+    this.submitted = true;
+    alert("in here") ;
   }
 
 }
