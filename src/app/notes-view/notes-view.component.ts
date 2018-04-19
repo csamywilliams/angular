@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from 'rxjs/Observable';
 
 import { Note } from '../../Models/note';
 
 import { NOTES } from '../../mock-data/mock-notes';
+
+import { Store } from '@ngrx/store';
+import * as fromStore from '../reducer/reducers';
+import * as todoAction from '../actions/note';
 
 @Component({
   selector: 'notes-view',
@@ -12,22 +17,21 @@ import { NOTES } from '../../mock-data/mock-notes';
 
 export class NotesViewComponent implements OnInit {
 
-  constructor() { }
+  notes: Observable<any>;
 
-  notes = NOTES;
+  constructor(
+    private store: Store<fromStore.State>
+  ) {
+    this.notes = store.select(fromStore.getNotes);
+  }
 
   showHide = false;
 
   ngOnInit() {
-  }
 
-  addNote($scope) {
-    //create a new note.
-
-    //this.notes.push(n);
-
-    $scope.showme = true;
-  
+    this.notes.subscribe((todos) => {
+      // subscribe a todos
+    })
   }
 
 }

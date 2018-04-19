@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { StoreModule } from '@ngrx/store';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
@@ -15,6 +17,7 @@ import { NotesViewComponent } from './notes-view/notes-view.component';
 import { NoteComponent } from './note/note.component';
 import { EditableNoteComponent } from './editable-note/editable-note.component';
 
+import { reducers } from './reducer/reducers';
 
 @NgModule({
   declarations: [
@@ -32,8 +35,8 @@ import { EditableNoteComponent } from './editable-note/editable-note.component';
     BrowserAnimationsModule,
     MatTabsModule,
     MatCardModule,
-    MatIconModule
-    
+    MatIconModule,
+    StoreModule.forRoot(reducers, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
