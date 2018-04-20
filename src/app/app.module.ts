@@ -8,6 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CaseDetailsComponent } from './case-details/case-details.component';
@@ -19,6 +22,7 @@ import { NoteComponent } from './note/note.component';
 import { EditableNoteComponent } from './editable-note/editable-note.component';
 
 import { reducers } from './reducer/reducers';
+import { ActivityTableComponent } from './activity-table/activity-table.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,8 @@ import { reducers } from './reducer/reducers';
     TabsComponent,
     NotesViewComponent,
     NoteComponent,
-    EditableNoteComponent
+    EditableNoteComponent,
+    ActivityTableComponent
   ],
   imports: [
     BrowserModule,    
@@ -39,6 +44,9 @@ import { reducers } from './reducer/reducers';
     MatTabsModule,
     MatCardModule,
     MatIconModule,
+    MatTableModule,
+    MatInputModule,
+    MatFormFieldModule,
     StoreModule.forRoot(reducers, {})
   ],
   providers: [],

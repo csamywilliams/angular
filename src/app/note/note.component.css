@@ -1,11 +1,19 @@
 summary {
-    background-color: #e3e2de;
+    background-color: #39b3dc; 
     padding: 10px;
 }
 
 details {
     margin: 2%;
-    border: 1px solid #39b3dc;
+    border: 1px solid #e3e2de;
+}
+
+.important { 
+    background-color: red;
+}
+
+p {
+    margin-left: 10px;
 }
 
 .flex-container {
