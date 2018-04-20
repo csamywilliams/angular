@@ -7,7 +7,7 @@ import { NOTES } from '../../mock-data/mock-notes';
 
 import { Store } from '@ngrx/store';
 import * as fromStore from '../reducer/reducers';
-import * as todoAction from '../actions/note';
+//import * as noteAction from '../actions/note';
 
 @Component({
   selector: 'notes-view',
@@ -25,13 +25,8 @@ export class NotesViewComponent implements OnInit {
     this.notes = store.select(fromStore.getNotes);
   }
 
-  showHide = false;
-
   ngOnInit() {
 
-    this.notes.subscribe((todos) => {
-      // subscribe a todos
-    })
   }
 
 }

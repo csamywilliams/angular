@@ -1,31 +1,22 @@
-<div class="example-container mat-elevation-z8">
-    <!-- <div class="example-header">
-      <mat-form-field>
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
-      </mat-form-field>
-    </div>
-   -->
-    <mat-table #table [dataSource]="dataSource">
-  
-      <!-- Name Column -->
-      <ng-container matColumnDef="datetime">
-        <mat-header-cell *matHeaderCellDef> Date/Time </mat-header-cell>
-        <mat-cell *matCellDef="let activity"> {{activity.datetime | date:'medium'}} </mat-cell>
-      </ng-container>
-  
-      <!-- Weight Column -->
-      <ng-container matColumnDef="event">
-        <mat-header-cell *matHeaderCellDef> Event </mat-header-cell>
-        <mat-cell *matCellDef="let activity"> {{activity.event}} </mat-cell>
-      </ng-container>
-  
-      <!-- Symbol Column -->
-      <ng-container matColumnDef="details">
-        <mat-header-cell *matHeaderCellDef> Details </mat-header-cell>
-        <mat-cell *matCellDef="let activity"> {{activity.details}} </mat-cell>
-      </ng-container>
-  
-      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-    </mat-table>
-  </div>
+<table>
+    <thead>
+        <tr>
+            <th>Date/Time</th>
+            <th>Event</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let activity of activities | async | reverse">
+            <td>
+                {{ activity.datetime | date:'medium' }}
+            </td>
+            <td>
+                {{ activity.event }}
+            </td>
+            <td>
+                {{ activity.details }}
+            </td>
+        </tr>
+    </tbody>
+</table>

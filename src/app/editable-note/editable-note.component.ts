@@ -5,8 +5,11 @@ import { NgModel } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import * as fromStore from '../reducer/reducers';
 import * as noteAction from '../actions/note';
+import * as activityAction from '../actions/activity';
 
 import { Note } from '../../Models/note';
+import { Activity } from '../../Models/activity';
+
 import { AUTHOR } from '../../mock-data/mock-notes';
 
 @Component({
@@ -39,6 +42,19 @@ export class EditableNoteComponent implements OnInit {
     note.date = Date.now();
 
     this.store.dispatch(new noteAction.AddNote(note));
+
+    this.dispatchActivity(subject);
+  
+  }
+
+  dispatchActivity(subject: string) {
+
+    var activity = new Activity();
+    activity.datetime = Date.now();
+    activity.event = "Note created";
+    activity.details = subject;
+
+    this.store.dispatch(new activityAction.AddActivity(activity));
   }
 
 }

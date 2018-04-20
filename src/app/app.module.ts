@@ -21,6 +21,7 @@ import { NotesViewComponent } from './notes-view/notes-view.component';
 import { NoteComponent } from './note/note.component';
 import { EditableNoteComponent } from './editable-note/editable-note.component';
 
+import { ReversePipe } from './reverse.pipe';
 import { reducers } from './reducer/reducers';
 import { ActivityTableComponent } from './activity-table/activity-table.component';
 
@@ -34,7 +35,8 @@ import { ActivityTableComponent } from './activity-table/activity-table.componen
     NotesViewComponent,
     NoteComponent,
     EditableNoteComponent,
-    ActivityTableComponent
+    ActivityTableComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,    

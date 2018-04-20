@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { MatTableDataSource } from '@angular/material';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
 
 import { Activity } from '../../Models/activity';
 
 import { ACTIVITY_DATA } from '../../mock-data/mock-activity';
+
+import { Store } from '@ngrx/store';
+import * as fromStore from '../reducer/reducers';
+import * as activityAction from '../actions/activity';
 
 @Component({
   selector: 'activity-table',
@@ -12,18 +17,31 @@ import { ACTIVITY_DATA } from '../../mock-data/mock-activity';
 })
 export class ActivityTableComponent implements OnInit {
 
-  constructor() { }
+  activitiesObservable: Observable<any>;
 
-  ngOnInit() {
+  activities: Observable<any>;
+
+  constructor(
+    private store: Store<fromStore.State>
+  ) {
+    this.activities = store.select(fromStore.getActivities);
   }
 
-  displayedColumns = ['datetime', 'event', 'details'];
-  dataSource = new MatTableDataSource(ACTIVITY_DATA.reverse());
+  ngOnInit() {
+    
 
-  applyFilter(filterValue: string) {
-    filterValue = filterValue.trim(); // Remove whitespace
-    filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
-    this.dataSource.filter = filterValue;
+    //this.activities = this.getActivities();
+
+    // let arrayActivities = [];
+    // this.activitiesObservable.subscribe((activity) => {
+    //   this.activities.push(activity);
+    // });
+
+  }
+
+  getActivities(): Observable<any>{
+    return Observable.of(this.activitiesObservable);
   }
 
 }
+
