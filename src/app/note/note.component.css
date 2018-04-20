@@ -1,13 +1,11 @@
-.note {
-    border: 1px solid #6D6F71;
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    padding: 2%;
-    margin: 2%;
+summary {
+    background-color: #e3e2de;
+    padding: 10px;
 }
 
-.note-header {
-    border-bottom: 1px solid #6D6F71;
-    padding-bottom: 5px;
+details {
+    margin: 2%;
+    border: 1px solid #39b3dc;
 }
 
 .flex-container {

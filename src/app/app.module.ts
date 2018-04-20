@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { StoreModule } from '@ngrx/store';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
@@ -33,6 +34,8 @@ import { reducers } from './reducer/reducers';
   imports: [
     BrowserModule,    
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatTabsModule,
     MatCardModule,
     MatIconModule,

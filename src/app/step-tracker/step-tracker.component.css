@@ -4,15 +4,16 @@
     padding-left: 0;
 }
 
-
 .c-step-tracker__item {
     padding: 10px;
+    color: #8FA8AF;
+    background-color: #eeeeee;
 }
 
 .c-step-tracker__item--completed {
-    color: green;
+    background-color: #e3e2de;
 }
 
 .c-step-tracker__item--incomplete {
-    color: red;
+    background-color: #FFCC00;
 }
