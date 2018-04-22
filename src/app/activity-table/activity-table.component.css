@@ -1,21 +1,19 @@
-/* Structure */
-.example-container {
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-  }
-  
-  .example-header {
-    min-height: 64px;
-    padding: 8px 24px 0;
-  }
-  
-  .mat-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
-  
-  .mat-table {
-    overflow: auto;
-    max-height: 500px;
-  }
+table {
+  margin: 1%;
+  border-collapse: collapse;
+}
+
+table th {
+  border-bottom: 2px solid #e3e2de; 
+  text-align: left;
+  padding: 10px;
+}
+
+tr {
+  border-bottom: 1px solid #e3e2de; 
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
