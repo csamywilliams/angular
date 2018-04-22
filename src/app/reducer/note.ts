@@ -1,6 +1,8 @@
 import * as Action from '../actions/note';
 import { Note } from '../../Models/note';
 
+import { MOCK_NOTES } from '../../mock-data/mock-notes';
+
 const STATUS = {
   NEW: 'new',
   DONE: 'done'
@@ -13,7 +15,7 @@ export interface State {
 
 export const initialState: State = {
   total: 0,
-  notes: []
+  notes: MOCK_NOTES
 };
 
 export function reducer(state = initialState, action: Action.Actions): State {

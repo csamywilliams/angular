@@ -28,15 +28,6 @@ export class ActivityTableComponent implements OnInit {
   }
 
   ngOnInit() {
-    
-
-    //this.activities = this.getActivities();
-
-    // let arrayActivities = [];
-    // this.activitiesObservable.subscribe((activity) => {
-    //   this.activities.push(activity);
-    // });
-
   }
 
   getActivities(): Observable<any>{

@@ -2,7 +2,7 @@ import { Note } from '../Models/note';
 
 export const AUTHOR = "Amy Williams"
 
-export const NOTES: Note[] = [
+export const MOCK_NOTES: Note[] = [
     {
         id: 1,
         date: Date.now(),

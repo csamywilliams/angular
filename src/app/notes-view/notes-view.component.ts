@@ -3,8 +3,6 @@ import {Observable} from 'rxjs/Observable';
 
 import { Note } from '../../Models/note';
 
-import { NOTES } from '../../mock-data/mock-notes';
-
 import { Store } from '@ngrx/store';
 import * as fromStore from '../reducer/reducers';
 //import * as noteAction from '../actions/note';
