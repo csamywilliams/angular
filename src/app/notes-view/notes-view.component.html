@@ -2,6 +2,6 @@
   <summary>Add note</summary>
   <editable-note></editable-note>
 </details>
-<div *ngFor="let note of notes | async">
+<div *ngFor="let note of notes | async | reverse">
   <note [note]="note"></note>
 </div>

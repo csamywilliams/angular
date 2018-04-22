@@ -24,6 +24,7 @@ import { EditableNoteComponent } from './editable-note/editable-note.component';
 import { ReversePipe } from './reverse.pipe';
 import { reducers } from './reducer/reducers';
 import { ActivityTableComponent } from './activity-table/activity-table.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ActivityTableComponent } from './activity-table/activity-table.componen
     NoteComponent,
     EditableNoteComponent,
     ActivityTableComponent,
-    ReversePipe
+    ReversePipe,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,    
