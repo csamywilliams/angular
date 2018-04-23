@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CaseDetails } from '../../Models/case-details';
+import { CaseDetails } from '../../../Models/case-details';
 
 @Component({
   selector: 'case-details',

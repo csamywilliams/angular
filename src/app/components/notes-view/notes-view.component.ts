@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
-
-import { Note } from '../../Models/note';
-
+import { Note } from '../../../Models/note';
 import { Store } from '@ngrx/store';
-import * as fromStore from '../reducer/reducers';
-//import * as noteAction from '../actions/note';
+import * as fromStore from '../../reducer/reducers';
 
 @Component({
   selector: 'notes-view',

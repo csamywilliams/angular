@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
-import { Activity } from '../../Models/activity';
+import { Activity } from '../../../Models/activity';
 
-import { ACTIVITY_DATA } from '../../mock-data/mock-activity';
+import { ACTIVITY_DATA } from '../../../mock-data/mock-activity';
 
 import { Store } from '@ngrx/store';
-import * as fromStore from '../reducer/reducers';
-import * as activityAction from '../actions/activity';
+import * as fromStore from '../../reducer/reducers';
+import * as activityAction from '../../actions/activity';
 
 @Component({
   selector: 'activity-table',

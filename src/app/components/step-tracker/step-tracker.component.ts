@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { STEPS } from '../../mock-data/mock-steps';
+import { STEPS } from '../../../mock-data/mock-steps';
 
 @Component({
   selector: 'step-tracker',
