@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ActivityTableComponent } from './activity-table.component';
+import { ReversePipe } from '../../pipes/reverse.pipe';
+import { StoreModule } from '@ngrx/store';
+import { reducers } from '../../reducer/reducers';
 
 describe('ActivityTableComponent', () => {
   let component: ActivityTableComponent;
@@ -8,7 +11,10 @@ describe('ActivityTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ActivityTableComponent ]
+      declarations: [ ActivityTableComponent, ReversePipe ],
+      imports: [
+        StoreModule.forRoot(reducers, {})
+      ]
     })
     .compileComponents();
   }));
