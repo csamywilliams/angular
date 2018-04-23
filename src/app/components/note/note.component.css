@@ -1,5 +1,5 @@
 summary {
-    background-color: #39b3dc; 
+    background-color: #e3e2de; 
     padding: 10px;
 }
 
@@ -9,8 +9,11 @@ details {
 }
 
 .important { 
-    background-color: red;
+    color: red;
+    float: right;
 }
+
+.important:after { content:" ! "; }
 
 p {
     margin-left: 10px;

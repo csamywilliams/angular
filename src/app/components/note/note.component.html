@@ -1,5 +1,11 @@
 <details>
-    <summary><span class="date">{{ note.date | date:'medium' }}</span><span> {{ note.author }}</span></summary>
+    <summary>
+        <span class="date">{{ note.date | date:'medium' }}</span>
+        <span> {{ note.author }}</span>
+        <span class="important" *ngIf="note.tag">Important</span>
+    </summary>
     <p><strong>Note</strong>: {{ note.subject }}</p>
-    <p><strong>Message</strong>:{{ note.message }}</p>
+    <p><strong>Message</strong>: {{ note.message }}</p>
+
+    
 </details>
