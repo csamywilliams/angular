@@ -3,18 +3,13 @@ import { Note } from '../../Models/note';
 
 import { MOCK_NOTES } from '../../mock-data/mock-notes';
 
-const STATUS = {
-  NEW: 'new',
-  DONE: 'done'
-}
-
 export interface State {
   total: number;
   notes: Array<Note>;
 }
 
 export const initialState: State = {
-  total: 0,
+  total: MOCK_NOTES.length,
   notes: MOCK_NOTES
 };
 

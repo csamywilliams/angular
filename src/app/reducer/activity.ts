@@ -3,11 +3,6 @@ import { Activity } from '../../Models/activity';
 
 import { ACTIVITY_DATA } from '../../mock-data/mock-activity';
 
-const STATUS = {
-  NEW: 'new',
-  DONE: 'done'
-}
-
 export interface State {
   total: number;
   notes: Array<Activity>;

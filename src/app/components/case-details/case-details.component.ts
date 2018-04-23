@@ -15,7 +15,6 @@ export class CaseDetailsComponent implements OnInit {
     type: "personal loans"
   };
 
-
   constructor() { }
 
   ngOnInit() {

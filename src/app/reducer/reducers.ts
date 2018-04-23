@@ -24,7 +24,7 @@ export const getNotes = createSelector(
   }
 );
 
-export const getTotalNote = createSelector(
+export const getTotalNotes = createSelector(
   getAppNote,
   (state: fromNote.State) => {
     return state.total;

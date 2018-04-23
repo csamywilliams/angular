@@ -1,18 +1,13 @@
 <mat-card>
   <mat-card-content>
     <mat-tab-group class="demo-tab-group">
-      <mat-tab label="Documents">
-        <div class="demo-tab-content">
-          Documents
-        </div>
-      </mat-tab>
-      <mat-tab label="Case Info">
-        <div class="demo-tab-content">
-          Case Info
-        </div>  
-      </mat-tab>
-      <mat-tab label="Notes">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Notes <span class="counter"> {{ total | async }}
+          </span>
+        </ng-template> 
         <notes-view></notes-view> 
+
       </mat-tab>
       <mat-tab label="Activity">
         <activity-table></activity-table>
